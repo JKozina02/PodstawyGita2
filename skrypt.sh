@@ -1,3 +1,17 @@
+Pomoc()
+{
+	echo "Oto flagi przygotowane wtym skrypcie! \n"
+	echo "-h Otwiera pomoc.\n"
+	echo ""
+}
+
+Date()
+{
+	echo "Dzisiejsza data\n"
+	date
+	exit 0
+}
+
 while getopts "h:d" flag
 do
 	case $flag in
@@ -15,17 +29,3 @@ do
 	
 	esac
 done
-
-Pomoc()
-{
-	echo "Oto flagi przygotowane wtym skrypcie! \n"
-	echo "-h Otwiera pomoc.\n"
-	echo ""
-}
-
-Date()
-{
-	echo "Dzisiejsza data\n"
-	date
-	exit 0
-}
