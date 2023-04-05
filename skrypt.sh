@@ -1,8 +1,8 @@
 Pomoc()
 {
-	echo "Oto flagi przygotowane wtym skrypcie! \n"
+	echo "Oto flagi przygotowane wtym skrypcie! "
 	echo "-h Otwiera pomoc.\n"
-	echo ""
+	echo "-d Pokazuje dzisiejszą datę.\n"
 }
 
 Date()
@@ -12,16 +12,15 @@ Date()
 	exit 0
 }
 
-while getopts "h:d" flag
+while getopts ":help:date" flag
 do
-	case $flag in
+	case "${flag}" in
 	h)
 		Pomoc
 		exit 0
 	;;
 	
 	d)
-		
 		Date
 		exit 0
 	;;
