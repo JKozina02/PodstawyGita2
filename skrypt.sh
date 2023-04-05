@@ -1,25 +1,29 @@
-while getopts "h:d" flag
+while getopts "help:date:" opt
 do
-	case $flag in
-	h)
-	Help
-	exit 0
+	case $opt in
+	
+	help)
+		
+		
+		
 	;;
 	
-	d) 
+	date)
+		
+	
+	
+	;;
+	
 	
 	esac
 done
 
 Help()
 {
-	echo "Oto flagi przygotowane wtym skrypcie! \n"
-	echo "--h Otwiera pomoc.\n"
-	echo ""
+	
 }
 
 Date()
 {
-	date
-	exit 0
+	
 }
