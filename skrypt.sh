@@ -4,6 +4,7 @@ Pomoc()
 	echo "-h|--help Otwiera pomoc."
 	echo "-d|--date Pokazuje dzisiejszą datę."
 	echo "-l <number>|--log <number> Tworzy plik log, number wskazuje ile razy utworzy plik."
+	echo "-i|--init klonuje repozytorium oraz tworzy ścieżkę PATH"
 }
 Log()
 {
@@ -44,10 +45,9 @@ do
 		Date
 	;;
 	
-	-l|--log)
+	-l|--log)	
 		argx=$2
-		a=${argx:1:-1}
-		
+		a=${argx:1:-1}		
 		Log $a
 		shift
 	;;
